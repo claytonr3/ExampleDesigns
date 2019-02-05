@@ -1,0 +1,11 @@
+========================
+PROJECT: QUAD-EMIO
+AUTHOR: CLAYTON RAYMENT
+DATE: 2/5/2019
+------------------------
+TOOL VERSION: 2018.2
+BOARD: ZCU102
+========================
+
+DESCRIPTION:
+    This project utilizes all 4 GEMS on the MPSoC, and has been routed to the SFP cage for use on a ZCU102 board.
