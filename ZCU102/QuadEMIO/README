@@ -2,11 +2,14 @@
 PROJECT: QUAD EMIO
 AUTHOR: CLAYTON RAYMENT
 DATE: 2/5/2019
-STATUS: BROKEN
+STATUS: FUNCTIONAL
 ------------------------
 TOOL VERSION: 2018.2
 BOARD: ZCU102-rev1.1
 ========================
+
+DISCLAIMER:
+THIS IS NOT AN OFFICIAL XILINX SUPPORTED PROJECT - USE AT YOUR OWN RISK.
 
 DESCRIPTION:
     This project utilizes all 4 GEMS on the MPSoC via EMIO to PCS/PMA IP configured for 1000BASE-X. This has been routed to the SFP cage for use on a ZCU102 board.
@@ -21,5 +24,3 @@ Place all files into a new project directory.
         From the command line run the following:
             petalinux-create -t project -s *.bsp
 
-ISSUES:
-    Only 2 of the 4 interfaces are functional in kernel.
