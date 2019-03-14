@@ -1,0 +1,39 @@
+========================
+PROJECT: FIXED LINK
+AUTHOR: CLAYTON RAYMENT
+DATE: 3/14/2019
+STATUS: FUNCTIONAL
+------------------------
+TOOL VERSION: 2018.2
+BOARD: ZCU102-rev1.1
+========================
+
+DISCLAIMER:
+THIS IS NOT AN OFFICIAL XILINX SUPPORTED PROJECT - USE AT YOUR OWN RISK.
+
+DESCRIPTION:
+    This project is an updated version of the fixed-link example found on the Xilinx Wiki here:
+    https://xilinx-wiki.atlassian.net/wiki/spaces/A/pages/18842230/Zynq+Ultrascale+Fixed+Link+PS+Ethernet+Demo
+
+USAGE:
+Place all files into a new project directory.
+    VIVADO:
+        From the command line run the following:
+            vivado -source *_top.tcl
+    
+    PETALINUX:
+        From the command line run the following:
+            petalinux-create -t project -s *.bsp
+
+
+RUNNING THE TESTS:
+    After building/packaging, place the following files onto an SD card:
+        > BOOT.bin
+        > image.ub
+        > setup.sh
+        > test.sh
+    
+    Once booted, run the following from the command line:
+        mount /dev/mmcblk0p1 /mnt
+        source /mnt/setup.sh
+        source /mnt/test.sh
