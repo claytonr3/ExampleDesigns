@@ -14,6 +14,8 @@ THIS IS NOT AN OFFICIAL XILINX SUPPORTED PROJECT - USE AT YOUR OWN RISK.
 DESCRIPTION:
     This project utilizes AXI 1G/2.5G Ethernet Subsystem configured for 1000BASE-X. This has been routed to the SFP cage on SFP0 for use on a ZCU102 board. System is configured to use the ZCU102 si570 at 156.25MHz.
 
+This project was created following XAPP1305/1306
+
 USAGE:
 Place all files into a new project directory.
     VIVADO:
