@@ -3,6 +3,7 @@
 This project utilizes the PS-GTR in Fixed-Link SGMII/1000BASE-X mode, locked to 1000Mbps with Autonegotiation Disabled. This project requires the following additional hardware:
 
 PCIE -> SMA Breakout Card
+
 SMA -> SFP Adapter Card 
 
 ## USAGE:
