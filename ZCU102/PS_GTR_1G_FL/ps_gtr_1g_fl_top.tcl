@@ -1,4 +1,3 @@
-set impl_const ./constrs.xdc
 set ui_name bd_bce4905f.ui
 set device xczu9eg-ffvb1156-2-i
 set proj_dir ps_gtr_1g_fl
@@ -8,9 +7,6 @@ set design_top ps_gtr_1g_fl
 create_project -name ${design_top} -force -dir "./${proj_dir}" -part ${device}
 
 source ${design_top}_bd.tcl
-
-add_files -fileset constrs_1 -norecurse ./${impl_const}
-set_property used_in_synthesis true [get_files ./${impl_const}]
 
 make_wrapper -files [get_files ./${proj_dir}/${design_top}.srcs/sources_1/bd/${design_top}/${design_top}.bd] -top
 
